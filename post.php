@@ -1,7 +1,7 @@
 <?php
 session_start();
 $username = $_SESSION['username'];
-?>
+?>﻿
 <html>
 <head>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -38,17 +38,17 @@ $username = $_SESSION['username'];
 </head>
 <body>
     <div class="smart-wrap">
-        <div class="smart-forms smart-container wrap-3">
+        <div style="height: 60%; max-width:88%;"  class="smart-forms smart-container wrap-3">
 
-            <div class="form-header header-blue">
-                <h4 style="font-size: 440%;" ><i></i> Add Post </h4>
+            <div  style="font-size: 440%;"  class="form-header header-blue">
+                <h4><i></i> Add Post </h4>
             </div><!-- end .form-header section -->
 
             <form method="post" action="#" id="comment2">
                 <div class="form-body theme-blue">
                     <div class="section">
                         <table>
-                            <span style="font-size: 300%;">Post As:</span>
+                            <span style="font-size: 300%;" >Post As:</span>
                             <tr>
                                 <td><input type="radio" name="aliaseChoose" value="1" checked="true"></input>
                                 </td>
@@ -116,7 +116,7 @@ $username = $_SESSION['username'];
 					<div class="section">
 
 
-							<select class="gui-input" id="FontColor" name="FontColor<select style="font-size: 205%;height: 7%;width:100%;" class="gui-input" id="FontColor" name="FontColor">
+							<select style="font-size: 205%;height: 7%;width:100%;" class="gui-input" id="FontColor" name="FontColor">
 							  <option>..Select Font color..</option>
 							   <option style=" color:red" value="Red">Red</option>
 							   <option style="color:blue" value="blue">blue</option>
@@ -130,7 +130,7 @@ $username = $_SESSION['username'];
 
                     <div class="section">
                         <label>
-                            <textarea style="font-size: 221%;"  class="gui-textarea" id="content" name="content" placeholder="Enter post..."></textarea>
+                            <textarea style="font-size: 221%;" class="gui-textarea" id="content" name="content" placeholder="Enter post..."></textarea>
                             <span><i class="fa fa-comments"></i></span>
 
                         </label>
@@ -140,7 +140,7 @@ $username = $_SESSION['username'];
 
                 </div><!-- end .form-body section -->
                 <div class="form-footer">
-                    <button class="btn btn-primary" type="submit" >Post</button>
+                    <button style="height: 6%;width: 36%;font-size: 308%;" class="btn btn-primary" type="submit" >Post</button>
                 </div><!-- end .form-footer section -->
             </form>
 
@@ -163,12 +163,12 @@ $username = $_SESSION['username'];
 
 <?php
 $servername = "remotemysql.com";
-$usernameX = "6MYYpFUn4B";
+$username = "6MYYpFUn4B";
 $password = "ru7XABTn0d";
 $dbname = "6MYYpFUn4B";
 
 // Create connection
-$conn = new mysqli($servername, $usernameX, $password, $dbname);
+$conn = new mysqli($servername, $username, $password, $dbname);
 // Check connection
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
