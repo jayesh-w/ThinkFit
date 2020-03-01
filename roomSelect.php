@@ -7,6 +7,31 @@ session_start();
 <html>
 <head>
 <style>
+ 
+#Anxiety
+{
+	background-color:#aaadfa;
+}
+#Psoriasis
+{
+	background-color:#f1faaa;
+}
+#Alzheimers
+{
+	background-color:#b5faaa;
+}
+#Obesity
+{
+	background-color:#f7aafa;
+}
+#Allergies
+{
+	background-color:#faaaaa;
+}
+#Epilepsy
+{
+	background-color:#aafaf7;
+}
 .tile
 {
   background-color:silver;
