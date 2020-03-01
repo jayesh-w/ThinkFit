@@ -80,7 +80,7 @@ function post()
 }
 function speak(){
 			var comment1 = document.getElementById("comment");
-            responsiveVoice.speak("hello world", "Hindi Male",{rate: 0.9});    
+            responsiveVoice.speak(" "+comment1+".", "Hindi Male",{rate: 0.9});    
         }
 </script>
 <script>
