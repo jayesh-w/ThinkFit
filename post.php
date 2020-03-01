@@ -53,7 +53,7 @@ $username = $_SESSION['username'];
                                 <td><input type="radio" name="aliaseChoose" value="1" checked="true"></input>
                                 </td>
                                 <td>
-                                    <span id="real" name ="real"><?php echo $username; ?></span>
+                                    <span style="font-size: 205%"  id="real" name ="real"><?php echo $username; ?></span>
                                 </td>
                             </tr>
                             <tr>
@@ -68,7 +68,7 @@ $username = $_SESSION['username'];
                                 <td><input type="radio" name="aliaseChoose" value="3"></input>
                                 </td>
                                 <td>
-                                    <span id="nickName"><input type="text" id="nickInput" placeholder="Nick Name" name="nickInput"/></span>
+                                    <span style="font-size: 205%" id="nickName"><input type="text" id="nickInput" placeholder="Nick Name" name="nickInput"/></span>
                                 </td>
                             </tr>
                         </table>
