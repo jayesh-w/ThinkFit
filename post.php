@@ -162,10 +162,10 @@ $username = $_SESSION['username'];
 
 
 <?php
-$servername = "localhost";
-$username = "aaqib";
-$password = "aaqib";
-$dbname = "thinkfit";
+$servername = "remotemysql.com";
+$username = "6MYYpFUn4B";
+$password = "ru7XABTn0d";
+$dbname = "6MYYpFUn4B";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
