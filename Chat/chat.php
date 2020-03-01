@@ -52,6 +52,7 @@ $(document).ready(function()
         });
 	});
 </script>
+<script src="https://code.responsivevoice.org/responsivevoice.js?key=a4iOGaf5"></script>
 <script type="text/javascript">
 function post()
 {
@@ -74,9 +75,13 @@ function post()
       }
     });
   }
-  
+  		
   return false;
 }
+function speak(){
+			var comment1 = document.getElementById("comment");
+            responsiveVoice.speak(comment1, "Hindi Male",{rate: 0.9});    
+        }
 </script>
 <script>
  function autoRefresh_div()
@@ -88,7 +93,7 @@ function post()
 </script>
 </head>
 
-<body style="font-size:2rem;">
+<body>
 <div id="logout">
 	<a href="logout.php" style="text-decoration:none"><i class="fa fa-sign-out" aria-hidden="true"></i>Logout</a>
 </div>
@@ -100,14 +105,14 @@ function post()
 </div>
 
 <div id="result-wrapper">
-	<div id="result">
+	<div onclick="speak()" id="result">
 		<?php
 			include("./load.php");
 		?>
 	</div>			
 </div>
 
-<form method='post' action="#" onsubmit="return post();" id="my_form" name="my_form" style="margin-top:100%">
+<form method='post' action="#" onsubmit="return post();" id="my_form" name="my_form">
 <div id="form-container">
 	<div class="form-text">
     	<input type="text" style="display:none" id="username" value="<?= $_SESSION['uname'] ?>">
