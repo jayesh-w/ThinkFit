@@ -54,7 +54,7 @@ $emails = $_SESSION['email'];
                                 <td><input type="radio" name="aliaseChoose" value="1" checked="true"></input>
                                 </td>
                                 <td>
-                                    <span style="font-size: 205%"  id="real" name ="real"><?php echo $username; ?></span>
+                                    <span style="font-size: 205%"  id="real" name ="real"><?php echo $usernames; ?></span>
                                 </td>
                             </tr>
                             <tr>
