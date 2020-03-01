@@ -46,6 +46,9 @@
 	<input type="email" name="email" placeholder="email" style="margin-left:6%; height:4%; margin-top:1%; font-size:2.5rem; padding:1%; border:1px solid black; width:80%"/><br><br>
 	<label for="fn" style="margin-left:6%">Phone :</label><br>
 	<input type="tel" name="contact" style="margin-left:10%; margin-left:6%; height:4%; margin-top:1%; font-size:2.5rem; padding:1%; border:1px solid black; width:80%" placeholder="Contact no."/><br><br>
+	<label for="fn" style="margin-left:6%">Disease</label><br>
+	<input type="text" name="disease" style="margin-left:10%; margin-left:6%; height:4%; margin-top:1%; font-size:2.5rem; padding:1%; border:1px solid black; width:80%" placeholder="Disease"/><br><br>
+	
 	<button type="reset" style="font-size:2.5rem; background-color:blue; color:white; height:4.5%; width:25%; border-radius:10px; margin-left:6%" >Clear</button>
 	<button type="submit" style="font-size:2.5rem; background-color:green; color:white; height:4.5%; width:25%; border-radius:10px; margin-left:3%" >Confirm</button><br><br>
 </form>
