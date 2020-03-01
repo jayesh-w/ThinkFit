@@ -84,12 +84,47 @@ function myFunction() {
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
+<?php
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
+$sql = "SELECT * FROM `blogs`;";
+
+
+$result = $conn->query($sql) or die($conn->error);
+
+$row = $result->fetch_assoc();
+while($row = $result->fetch_assoc())
+{
+$authorname = $row['blog_author'];
+$authordisease = $row['authorDisease'];
+$content = $row['blog_content'];
+$posttype = $row['blog_type'];
+	
+$bgcolor = $row['blog_bgcolor'];
+$textcolor = $row['blog_textcolor'];	
+?>
+<div class="content">
+
 <div style="background-color:white; width:90%; height:54%; margin-left:5%; border-radius:20px; margin-top:2%; box-shadow:0 0 5px red,0 0 13px yellow, 0 0 8px yellow">
-	<div id="username" style="font-size:4rem; padding-left:5%; padding-top:3%"><b>Anonymous</b></div><hr>
-	<div id="post" style="height:63%; font-size:3rem">Hey, guyzzzzz</div><hr>
-	<button style="background-color:white; border:none; margin-left:3%" type="button" onclick="document.getElementById('heart').src='./images/heart1.png'"><img src="./images/heart2.png" id="heart" width="85" height="85"/></button>
-	<button data-toggle="modal" data-target="#myModal" style="background-color:white; border:none; margin-left:4%" type="button" ><img src="./images/comment.png" id="heart" width="100" height="100"/></button><br>
-	<div id="likes" style="font-size:2rem; margin-left:2%">* 112 likes<br>* 10 comments</div>
+<div id="username" style="font-size:4rem; padding-left:5%; padding-top:3%"><b><?=$authorname?></b></div><hr>
+<div style="height:63%; background-color:<?=$bgcolor?>; color:<?=$textcolor?>;">
+<div id="posttype" style="font-size:3rem"><?=$posttype?></div><br>
+<div id="postdisease" style="font-size:3rem"><?=$authordisease?></div><br>
+<div id="postcontent" style="font-size:3rem"><?=$content?></div>
+</div><hr>
+<button style="background-color:white; border:none; margin-left:3%" type="button" onclick="document.getElementById('heart').src='./images/heart1.png'"><img src="./images/heart2.png" id="heart" width="85" height="85"/></button>
+<button style="background-color:white; border:none; margin-left:4%" id="myBtn" type="button" ><img src="./images/comment.png" id="heart" width="100" height="100"/></button><br>
+<div id="likes" style="font-size:2rem; margin-left:2%">* 112 likes<br>* 10 comments</div>
+</div>
+</div>
+	
+	
+<?php
+}
+
+?>
 
 
 
