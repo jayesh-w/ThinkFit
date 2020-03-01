@@ -1,6 +1,7 @@
 <?php
 session_start();
-$username = $_SESSION['username'];
+$usernames = $_SESSION['username'];
+$emails = $_SESSION['email'];
 ?>﻿
 <html>
 <head>
@@ -44,7 +45,7 @@ $username = $_SESSION['username'];
                 <h4><i></i> Add Post </h4>
             </div><!-- end .form-header section -->
 
-            <form method="post" action="./includes/blogpost.php" id="comment2">
+            <form method="post" action="./includes/blogpost.php?u=<?php echo $usernames;?>&e=<?php echo $emails;?>" id="comment2">
                 <div class="form-body theme-blue">
                     <div class="section">
                         <table>
