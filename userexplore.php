@@ -68,7 +68,7 @@ include './includes/connect.php';
 <div >
 	<figure class="navbar">
 		<img src="./images/maleicon1.jpg" height="350" width="350" style="border-radius:50%; margin-top:2%; float:left; position:fixed; box-shadow:0 0 16px yellow,0 0 10px blue; "></img>
-		<figcaption style="font-size:4.5rem; background-color:white; color:blue; width:50%; margin-left:45%; margin-top:12%; text-align:center; border-radius:25px; box-shadow:0 0 16px yellow,0 0 10px blue ">Username</figcaption>
+		<figcaption style="font-size:4.5rem; background-color:white; color:blue; width:50%; margin-left:45%; margin-top:12%; text-align:center; border-radius:25px; box-shadow:0 0 16px yellow,0 0 10px blue "><?php echo $_SESSION['username'];?></figcaption>
 	</figure>
 </div><br>
 <script>
