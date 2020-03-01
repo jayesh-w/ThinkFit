@@ -82,20 +82,12 @@ function myFunction() {
 	&nbsp&nbsp<b>Rating :</b><i> * * * * *</i><br>
 </div><br><br><br><br><br>
 <figure style="margin-top:9%;  margin-left:6%; float:left ">
-	<img src="./images/icon1.png" height="330" width="400" style="border-radius:20px; box-shadow:3px 2px 20px gray, 3px 2px 2px gray"/>
-	<figcaption style="font-size:3.3rem; color:blue "><b>Disease</b>	</figcaption>
+	<a  href="#"  ><img src="./images/post.png" height="330" width="400" style="border-radius:20px; box-shadow:3px 2px 20px gray, 3px 2px 2px gray"/></a>
+	<figcaption style="font-size:3.3rem; color:blue "><b>See your Post</b>	</figcaption>
 </figure>
 <figure style="margin-top:9%; margin-left:5%">
-	<img src="./images/icon4.png" height="330" width="400" style="border-radius:20px; box-shadow:3px 2px 20px gray, 3px 2px 2px gray"/>
-	<figcaption style="font-size:3.3rem; color:blue "><b>Symptoms</b>	</figcaption>
-</figure><br><br><br>
-<figure style=" margin-left:6%; float:left ">
-	<img src="./images/icon3.png" height="330" width="400" style="border-radius:20px; box-shadow:3px 2px 20px gray, 3px 2px 2px gray"/>
-	<figcaption style="font-size:3.3rem; color:blue"><b>Medicine</b>	</figcaption>
-</figure>
-<figure style=" margin-left:5%">
-	<img src="./images/icon5.jpg" height="330" width="400" style="border-radius:20px; box-shadow:3px 2px 20px gray, 3px 2px 2px gray"/>
-	<figcaption style="font-size:3.3rem; color:blue "><b>Suggestions</b>	</figcaption>
+	<a  href="./coin.html"  ><img src="./images/shop.png" height="330" width="400" style="background-color:white;border-radius:20px; box-shadow:3px 2px 20px gray, 3px 2px 2px gray"/></a>
+	<figcaption style="font-size:3.3rem; color:blue "><b>Shop</b>	</figcaption>
 </figure><br><br><br>
 
 </body>
