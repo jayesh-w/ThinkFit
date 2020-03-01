@@ -48,7 +48,7 @@ $dr = "Dr.".$dr;
 <div style="font-size:8.5rem; color:white; margin-top:5%; text-align:center; text-shadow:0 0 18px blue, 0 0 15px blue, 0 0 10px blue "><b><i>Think Fit !!!</i></b></div><hr><br>
 <figure>
 	<img src="./images/doctorf.png" width="250" height="250" style="border-radius:50%; margin-left:5%"/>
-	<figcaption style="position:relative; background-color:white; font-size:2.5rem; width:30%; margin-left:5%; margin-top:3%; text-align:center; height:3%">Dr. Name</figcaption>
+	<figcaption style="position:relative; background-color:white; font-size:2.5rem; width:30%; margin-left:5%; margin-top:3%; text-align:center; height:3%"><?php echo $dr ; ?></figcaption>
 </figure>
 <div style="background-color:white; font-size: 2.5rem; color:black; width:50%; height:18%;box-shadow:13px 12px gray; margin-left:40%; margin-top:-35%">
 	<br>&nbsp&nbsp<b>Experience :</b><i> 6 yrs</i><br>
