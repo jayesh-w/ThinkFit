@@ -163,12 +163,12 @@ $username = $_SESSION['username'];
 
 <?php
 $servername = "remotemysql.com";
-$username = "6MYYpFUn4B";
+$usernameX = "6MYYpFUn4B";
 $password = "ru7XABTn0d";
 $dbname = "6MYYpFUn4B";
 
 // Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
+$conn = new mysqli($servername, $usernameX, $password, $dbname);
 // Check connection
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
