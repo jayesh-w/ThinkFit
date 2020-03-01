@@ -37,7 +37,7 @@ $(document).ready(function(){
 	<br><h3 style="text-align:center">Admin Login ..</h3>
 	<label  for="password">Password</label><br>
 	<input id="pass" type="password" name="password" placeholder="Enter password"/><br><br>
-	<a href="post.html" <button onclick="CheckPassword()" type="submit" >Submit</button><br>
+	<a href="./adminhome.html" <button onclick="CheckPassword()" style="width:40%;" type="submit" >Submit</button><br>
 	<div id="wrong"></div>
 	</form>
 </div>
