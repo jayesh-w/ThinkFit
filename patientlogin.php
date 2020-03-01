@@ -36,7 +36,7 @@ $(document).ready(function(){
 </head>
 <body background="./images/bgimg.jpg">
 <div style="font-size:8.5rem; color:white; margin-top:5%; text-align:center; text-shadow:0 0 18px blue, 0 0 15px blue, 0 0 10px blue "><b><i>Think Fit !!!</i></b></div>
-<div style="font-size:3.2rem; text-align:center; margin-top:20%; color:white; text-shadow:0 0 10px blue">New user ? <a>Sign up ....</a></div><br><br>
+<div style="font-size:3.2rem; text-align:center; margin-top:20%; color:white; text-shadow:0 0 10px blue">New user ? <a href="patientsignup.php">Sign up ....</a></div><br><br>
 <div id="whiteBg" style="width:80%; height:45%; font-size:3.5rem; background-color:white; margin-left:12%; box-shadow: 3px 2px 30px gray, 3px 2px 12px gray">
 	<form method="post" action="./includes/login.php">
 
