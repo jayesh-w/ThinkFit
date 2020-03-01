@@ -4,6 +4,17 @@
 <meta charset="utf-8">
 <title>Lets Chat</title>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+<script>
+var timeoutId = 0;
+
+$('.chats').on('mousedown', function() {
+    timeoutId = setTimeout(myFunction, 1000);
+}).on('mouseup mouseleave', function() {
+    clearTimeout(timeoutId);
+	alert ("Message Starred");
+});
+</script>
 <?php
 include('./config.php');
 session_start();
