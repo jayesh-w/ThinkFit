@@ -9,7 +9,7 @@
 var timeoutId = 0;
 
 $('.chats').on('mousedown', function() {
-    timeoutId = setTimeout(myFunction, 1000);
+    timeoutId = setTimeout(myFunction, 10);
 }).on('mouseup mouseleave', function() {
     clearTimeout(timeoutId);
 	alert ("Message Starred");
