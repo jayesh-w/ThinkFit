@@ -126,7 +126,7 @@ function rmvdoct(){
 	<ul style="margin-left:5%; padding-top:4%" type="none">
 		<li id="docReg">Doctor registration</li>
 		<li id="remUser">Remove user</li>
-		<li id="explore"><a href="./adminexplore.php" style="text-decoration:none;">Explore</a></li>
+		<li id="explore"><a href="./adminexplore.php" style="text-decoration:none;color:black;">Explore</a></li>
 		<li id="remDoc">Remove doctor</li>
 	</ul>
 </div>
