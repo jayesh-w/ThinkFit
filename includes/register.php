@@ -23,7 +23,7 @@ $qry = insertintoSql($sql);
 if($qry)
 {
   session_start();
-  $_SESSION['username'] = $fn." ".$ln;
+  $_SESSION['username'] = $fn;
   $_SESSION['city'] = $city;
   $_SESSION['disease'] = $disease ;
   $_SESSION['email'] = $email;
