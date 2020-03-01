@@ -162,6 +162,9 @@ $username = $_SESSION['username'];
 
 
 <?php
+
+if(isset($_POST['submit']))
+{
 $servername = "remotemysql.com";
 $username = "6MYYpFUn4B";
 $password = "ru7XABTn0d";
@@ -210,5 +213,6 @@ if ($conn->query($sql) === TRUE) {
 }
 
 $conn->close();
+}
 ?>
 </html>
