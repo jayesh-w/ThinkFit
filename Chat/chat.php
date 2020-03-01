@@ -88,7 +88,7 @@ function post()
 </script>
 </head>
 
-<body>
+<body style="font-size:2rem;">
 <div id="logout">
 	<a href="logout.php" style="text-decoration:none"><i class="fa fa-sign-out" aria-hidden="true"></i>Logout</a>
 </div>
@@ -107,7 +107,7 @@ function post()
 	</div>			
 </div>
 
-<form method='post' action="#" onsubmit="return post();" id="my_form" name="my_form">
+<form method='post' action="#" onsubmit="return post();" id="my_form" name="my_form" style="margin-top:100%">
 <div id="form-container">
 	<div class="form-text">
     	<input type="text" style="display:none" id="username" value="<?= $_SESSION['uname'] ?>">
