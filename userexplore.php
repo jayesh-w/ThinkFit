@@ -103,10 +103,13 @@ $authorname = $row['blog_author'];
 $authordisease = $row['authorDisease'];
 $content = $row['blog_content'];
 $posttype = $row['blog_type'];
+	
+$bgcolor = $row['blog_bgcolor'];
+$textcolor = $row['blog_textcolor'];	
 ?>
 <div class="content">
 
-<div style="background-color:white; width:90%; height:54%; margin-left:5%; border-radius:20px; margin-top:2%; box-shadow:0 0 5px red,0 0 13px yellow, 0 0 8px yellow">
+<div style="background-color:<?=$bgcolor?>;color:<?=$textcolor?> width:90%; height:54%; margin-left:5%; border-radius:20px; margin-top:2%; box-shadow:0 0 5px red,0 0 13px yellow, 0 0 8px yellow">
 <div id="username" style="font-size:4rem; padding-left:5%; padding-top:3%"><b><?=$authorname?></b></div><hr>
 <div style="height:63%">
 <div id="posttype" style="font-size:3rem"><?=$posttype?></div><br>
