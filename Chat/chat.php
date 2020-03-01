@@ -6,6 +6,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script>
+	$(document).ready(function(){
 var timeoutId = 0;
 
 $('.chats').on('mousedown', function() {
@@ -14,6 +15,8 @@ $('.chats').on('mousedown', function() {
     clearTimeout(timeoutId);
 	alert ("Message Starred");
 });
+		
+		});
 </script>
 <?php
 include('./config.php');
