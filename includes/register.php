@@ -25,7 +25,8 @@ if($qry)
   session_start();
   $_SESSION['username'] = $fn." ".$ln;
   $_SESSION['city'] = $city;
-  $_SESSION['disease'] = "Obesity" ;
+  $_SESSION['disease'] = $disease ;
+  $_SESSION['email'] = $email;
 
 
   header("location: ../patienthome.php");
