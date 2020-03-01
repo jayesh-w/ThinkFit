@@ -16,7 +16,7 @@ else {
   $_SESSION['email'] = $email;
   $_SESSION['username'] = $search['fn'];
   $_SESSION['city'] = $search['city'];
-  $_SESSION['disease'] = "obesity"  ;
+  $_SESSION['disease'] = $search['disease'] ;
   header("location: ../patienthome.php");
 
 }
