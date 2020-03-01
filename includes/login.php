@@ -12,6 +12,7 @@ if($search == "Nullify")
 }
 else {
   // code...
+  session_start();
   $_SESSION['email'] = $email;
   $_SESSION['username'] = $search['fn'];
   $_SESSION['city'] = $search['city'];
