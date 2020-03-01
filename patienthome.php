@@ -77,7 +77,7 @@ function myFunction() {
 </figure>
 <div style="background-color:white; font-size: 2.5rem; color:black; width:50%; height:18%; position:relative; margin-left:45%; margin-top:4%; box-shadow:13px 12px gray">
 	<br>&nbsp&nbsp<b>Content :</b><i> <?php echo $_SESSION['disease']; ?> </i><br>
-	&nbsp&nbsp<b>City :</b><i> Mumbai</i><br>
+	&nbsp&nbsp<b>City :</b><i> <?php echo $_SESSION['city']; ?> </i><br>
 	&nbsp&nbsp<b>Followers :</b><i>20</i><br>
 	&nbsp&nbsp<b>Rating :</b><i> * * * * *</i><br>
 </div><br><br><br><br><br>
