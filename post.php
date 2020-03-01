@@ -44,7 +44,7 @@ $username = $_SESSION['username'];
                 <h4><i></i> Add Post </h4>
             </div><!-- end .form-header section -->
 
-            <form method="post" action="#" id="comment2">
+            <form method="post" action="./includes/blogpost.php" id="comment2">
                 <div class="form-body theme-blue">
                     <div class="section">
                         <table>
@@ -161,56 +161,5 @@ $username = $_SESSION['username'];
 </script>
 
 
-<?php
 
-$servername = "remotemysql.com";
-$username = "6MYYpFUn4B";
-$password = "ru7XABTn0d";
-$dbname = "6MYYpFUn4B";
-
-// Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
-// Check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
-
-//	date_default_timezone_set('Asia/Kolkata');
-$date = date('Y-m-d H:i:s');
-
-$answer = $_POST['aliaseChoose'];
-if ($answer == "1")
-{
-    $author = $username ;
-
-}
-elseif($answer == "2")
-{
-    $author = "Anonymous";
-}
-elseif ($answer == "3")
-{
-    $author = $_POST['nickInput'];
-}
-
-$authorEmail = $_SESSION['email'];
-$disease = $_POST['selectDisease'];
-$bgcolor = $_POST['BoxColor'];
-$textcolor = $_POST['FontColor'];
-$content = $_POST['content'];
-$postType = $_POST['postType'];
-
-
-$sql = "INSERT INTO blogs (authorEmail, blog_author, authorDisease, blog_bgcolor, blog_textcolor,blog_content,blog_time, blog_type) VALUES ('$authorEmail','$author', '$disease', '$bgcolor', '$textcolor', '$content', '$date', '$postType')";
-
-
-if ($conn->query($sql) === TRUE) {
-    //echo "New record created successfully";
-} else {
-   // echo "Error: " . $sql . "<br>" . $conn->error;
-}
-
-$conn->close();
-
-?>
 </html>
