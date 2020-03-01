@@ -79,7 +79,7 @@ function post()
   return false;
 }
 function speak(){
-			var comment1 =document.getElementByTag("strong").value;
+			var comment1 =document.getElementByTagName("strong").value;
             responsiveVoice.speak("message "+comment1, "Hindi Male",{rate: 0.9});    
         }
 </script>
