@@ -1,7 +1,7 @@
 <?php
 session_start();
 $username = $_SESSION['username'];
-?>﻿
+?>
 <html>
 <head>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -41,14 +41,14 @@ $username = $_SESSION['username'];
         <div class="smart-forms smart-container wrap-3">
 
             <div class="form-header header-blue">
-                <h4><i></i> Add Post </h4>
+                <h4 style="font-size: 440%;" ><i></i> Add Post </h4>
             </div><!-- end .form-header section -->
 
             <form method="post" action="#" id="comment2">
                 <div class="form-body theme-blue">
                     <div class="section">
                         <table>
-                            <span>Post As:</span>
+                            <span style="font-size: 300%;">Post As:</span>
                             <tr>
                                 <td><input type="radio" name="aliaseChoose" value="1" checked="true"></input>
                                 </td>
@@ -61,7 +61,7 @@ $username = $_SESSION['username'];
                                 <td><input type="radio" name="aliaseChoose" value="2"></input>
                                 </td>
                                 <td>
-                                    <span id="anon" name="anon">Anonymous</span>
+                                    <span style="font-size: 205%" id="anon" name="anon">Anonymous</span>
                                 </td>
                             </tr>
                             <tr>
@@ -77,7 +77,7 @@ $username = $_SESSION['username'];
                     <div class="section">
 
 
-							<select class="gui-input" id="selectDisease" name="selectDisease">
+							<select style="font-size: 205%;height: 7%;width:100%;" class="gui-input" id="selectDisease" name="selectDisease">
 							  <option value="1">..Select Disease..</option>
 							  <option value="Anxiety">Anxiety</option>
 							  <option value="Psoriasis">Psoriasis</option>
@@ -90,7 +90,7 @@ $username = $_SESSION['username'];
 					<div class="section">
 
 
-							<select class="gui-input" id="postType"  name="postType">
+							<select style="font-size: 205%;height: 7%;width:100%;" class="gui-input" id="postType"  name="postType">
 							  <option>Please select type of blog</option>
 							  <option  >none</option>
 							  <option value="Symptoms" >Symptoms</option>
@@ -103,7 +103,7 @@ $username = $_SESSION['username'];
 					<div class="section">
 
 
-							<select class="gui-input" id="BoxColor"  name="BoxColor">
+							<select style="font-size: 205%;height: 7%;width:100%;" class="gui-input" id="BoxColor"  name="BoxColor">
 							  <option>..Select Background color..</option>
 							  <option  >none</option>
 							  <option style="background-color:red; color:white" value="Red" >Red</option>
@@ -116,7 +116,7 @@ $username = $_SESSION['username'];
 					<div class="section">
 
 
-							<select class="gui-input" id="FontColor" name="FontColor">
+							<select class="gui-input" id="FontColor" name="FontColor<select style="font-size: 205%;height: 7%;width:100%;" class="gui-input" id="FontColor" name="FontColor">
 							  <option>..Select Font color..</option>
 							   <option style=" color:red" value="Red">Red</option>
 							   <option style="color:blue" value="blue">blue</option>
@@ -130,7 +130,7 @@ $username = $_SESSION['username'];
 
                     <div class="section">
                         <label>
-                            <textarea class="gui-textarea" id="content" name="content" placeholder="Enter post..."></textarea>
+                            <textarea style="font-size: 221%;"  class="gui-textarea" id="content" name="content" placeholder="Enter post..."></textarea>
                             <span><i class="fa fa-comments"></i></span>
 
                         </label>
