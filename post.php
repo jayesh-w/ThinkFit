@@ -140,7 +140,7 @@ $username = $_SESSION['username'];
 
                 </div><!-- end .form-body section -->
                 <div class="form-footer">
-                    <button style="height: 6%;width: 36%;font-size: 308%;" class="btn btn-primary" type="submit" >Post</button>
+                    <button style="height: 6%;width: 36%;font-size: 308%;" name="submit" class="btn btn-primary" type="submit" >Post</button>
                 </div><!-- end .form-footer section -->
             </form>
 
