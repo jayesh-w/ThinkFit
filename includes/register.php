@@ -16,8 +16,9 @@ $city = $_POST['city'];
 $gender = $_POST['gender'];
 $email = $_POST['email'];
 $phone = $_POST['contact'];
+$disease = $_POST['disease'];
 
-$sql = "INSERT INTO `user`(`fn`, `ln`, `birthdate`, `city`, `gender`, `emailid`, `phone` , `password`) VALUES ('$fn','$ln','$dob','$city','$gender','$email','$phone','$pass2');";
+$sql = "INSERT INTO `user`(`fn`, `ln`, `birthdate`, `city`, `gender`, `emailid`, `phone` , `password`, `disease`) VALUES ('$fn','$ln','$dob','$city','$gender','$email','$phone','$pass2','$disease');";
 $qry = insertintoSql($sql);
 if($qry)
 {
